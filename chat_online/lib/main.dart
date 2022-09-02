@@ -6,10 +6,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(Home());
-
-
-
+  runApp(const Home());
 }
 
 class Home extends StatelessWidget {
@@ -21,12 +18,12 @@ class Home extends StatelessWidget {
       title: 'Chat Flutter',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.lightGreen,
         iconTheme: const IconThemeData(
-          color: Colors.blue,
+          color: Colors.lightGreen,
         )
       ),
-      home: ,
+      home: Container(),
     );
   }
 }
